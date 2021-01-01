@@ -3,7 +3,7 @@ from flask import Flask, render_template, g
 
 PATH = 'db/jobs.sqlite'
 
-app = Flask(__name__)
+app = Flask(name)
 
 def open_connection():
     connection = getattr(g, '_connection', None)
